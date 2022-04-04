@@ -1,6 +1,15 @@
-div{
-    & > div{
-        background-color: red;
-        width: 200px;
+#nav{
+    height: 80px;
+
+    & .menu-item{
+        width: 100px;
+        text-align: center;
+        &:first-child{
+            width: 200px;
+        }
+
+        & > img{
+            height: 80px;
+        }
     }
 }
