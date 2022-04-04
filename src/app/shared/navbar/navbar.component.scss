@@ -1,0 +1,6 @@
+div{
+    & > div{
+        background-color: red;
+        width: 200px;
+    }
+}
