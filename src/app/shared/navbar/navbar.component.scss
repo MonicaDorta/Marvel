@@ -1,15 +1,42 @@
-#nav{
-    height: 80px;
+#nav {
+  height: 80px;
 
-    & .menu-item{
-        width: 100px;
-        text-align: center;
-        &:first-child{
-            width: 200px;
-        }
+  & .items {
+    width: 200px;
+    text-align: right;
 
-        & > img{
-            height: 80px;
-        }
+    & #linkedin {
+      cursor: pointer;
     }
+  }
+
+  & .menu {
+    height: 100%;
+
+    & .menu-item {
+      height: 100%;
+      width: 130px;
+      text-align: center;
+      cursor: pointer;
+
+      &:hover {
+        color: #FE0000;
+        border-bottom: 2px solid #FE0000;
+        -webkit-transition:  border-bottom 3s ease;
+        -moz-transition:  border-bottom 3s ease;
+        -o-transition:  border-bottom 3s ease;
+        -ms-transition: border-bottom 3s ease;
+        transition: border-bottom 3s ease; 
+      }
+    }
+
+    & .logo {
+      width: 200px;
+      text-align: center;
+
+      &>img {
+        height: 80px;
+      }
+    }
+  }
 }
